@@ -9,7 +9,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 });
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<ITempService, TempService>();
+builder.Services.AddScoped<IDbService, DbService>();
 
 var app = builder.Build();
 app.MapControllers();
